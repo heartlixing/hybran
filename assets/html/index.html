@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script type="text/javascript">
+    function sayHello(msg){
+        //calls Android's JavaScriptInterface Function
+        furkan.showToast(msg);
+    }
+    
+    function returnable(){
+    	var msg=furkan.extendToast("Fucker");
+        remazan.showToast(msg);
+    }
+    
+    
+    function sendArray(){
+    	var myCars=new Array("Porsche","Anadol","BMW");
+        furkan.sendArray(myCars);
+    }
+    
+  
+    </script>
+  </head>
+  <body >
+    <div onclick="sayHello('Bak')"> sayhello  </div>
+
+	<div onclick="returnable()"> Returnable  </div>
+	
+	<div onclick="sendArray()"> SendArray  </div>
+
+  </body>
+</html>
