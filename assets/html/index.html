@@ -6,26 +6,49 @@
         furkan.showToast(msg);
     }
     
+    
     function returnable(){
     	var msg=furkan.extendToast("Fucker");
         remazan.showToast(msg);
     }
     
+    function path(){
+    	furkan.asd();
+    }
+    
+    function jsonizm(){
+    	furkan.writeJson();
+    }
+    
+    function reader(){
+    	furkan.reader();
+    }
     
     function sendArray(){
     	var myCars=new Array("Porsche","Anadol","BMW");
         furkan.sendArray(myCars);
     }
     
-  
+  	function returnbool(){
+  		var x=furkan.returnbool();
+  		remazan.showToast(x);
+  	}
     </script>
   </head>
   <body >
+  	<div onclick="jsonizm()"> JSON  </div><br />
+  	
+  	<div onclick="reader()"> JSONread  </div><br />
+  	
+  	<div onclick="path()"> path </div><br />
+  	
     <div onclick="sayHello('Bak')"> sayhello  </div>
 
 	<div onclick="returnable()"> Returnable  </div>
 	
 	<div onclick="sendArray()"> SendArray  </div>
+	
+	<div onclick="returnbool()"> returnbool  </div>
 
   </body>
 </html>

@@ -1,5 +1,6 @@
 package com.example.testhybran;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.webkit.WebSettings;
@@ -8,6 +9,7 @@ import android.webkit.WebView;
 import com.hybran.js.Deneme;
 import com.hybran.js.JavaScriptInterface;
 
+@SuppressLint("SetJavaScriptEnabled")
 public class MainActivity extends Activity {
 
 	@Override
